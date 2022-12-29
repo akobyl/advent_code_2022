@@ -59,22 +59,6 @@ mod tests {
     }
 
     #[test]
-    fn test_order_ranges() {
-        let mut x = vec![
-            Range { start: 10, end: 15 },
-            Range { start: 9, end: 12 },
-            Range { start: 10, end: 11 },
-        ];
-        let x_sorted = vec![
-            Range { start: 9, end: 12 },
-            Range { start: 10, end: 11 },
-            Range { start: 10, end: 15 },
-        ];
-        x.sort();
-        assert_eq!(x_sorted, x);
-    }
-
-    #[test]
     fn test_range_contained() {
         let x1 = vec![
             Range { start: 10, end: 15 },
